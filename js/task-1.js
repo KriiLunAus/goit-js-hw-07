@@ -1,11 +1,22 @@
 `use strict`
-const items = document.body.querySelectorAll(".item");
-const header = document.body.querySelectorAll("h2")
-const itemElements = document.body.querySelectorAll(".item-element")
+
+const catList = document.getElementById("categories")
+
+const items = catList.querySelectorAll("li.item");
+
 
 console.log(`Number of categories: ${items.length}`);
-console.log(itemElements)
 
-items.forEach((element) =>
-    console.log(`Category: `));
-    console.log(`Elements: `);
+
+
+items.forEach((element) => {
+    
+    const header = element.querySelector("h2").textContent;
+    console.log(`Category: ${header}`);
+    
+    const quantityOfElements = element.querySelectorAll("li");
+    console.log(`Elements: ${quantityOfElements.length}`)
+
+}
+)
+    

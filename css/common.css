@@ -13,6 +13,8 @@ body {
   line-height: 1.5;
 }
 
+/* TASK N1 */
+
 ul {
   padding: 0;
 }
@@ -62,4 +64,15 @@ h2 {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.04em;
+}
+
+/* TASK N2 */
+
+.gallery {
+  max-width: 1440px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  row-gap: 48px;
+  column-gap: 24px;
 }

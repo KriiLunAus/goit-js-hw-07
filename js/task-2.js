@@ -27,3 +27,19 @@ const images = [
     alt: 'Zebras on Zebra',
   },
 ];
+
+
+
+const photoGallery = document.querySelector('.gallery');
+
+const addPhoto = images
+  .map((image) => 
+    `<li class="gallery-item">
+    <img src="${image.url} alt="${image.alt}" width ="360" height ="300"">
+    </li>`
+  )
+  .join("");
+
+  console.log(addPhoto)
+
+photoGallery.innerHTML = addPhoto;
